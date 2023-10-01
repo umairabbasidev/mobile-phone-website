@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'Roboto', sans-serif;
+ /* background: #FFF; */
+ background: var(--orange-10, #FFF1E5);
+}
+.parent_one{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-wrap: wrap;
+ cursor: pointer;
+}
+button{
+ cursor: pointer;
+}
+
+.parent_one_list ul {
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ list-style: none;
+ flex-wrap: wrap;
+}
+.parent_one_list a:hover{
+ color:  #E65C00 
+}
+.parent_one_list a{
+ text-decoration: none;
+}
+
+.parent_one_list button{
+ border: none;
+width: 150px;
+height: 40px;
+margin-top: 0.5rem;
+border-radius: 30px;
+background: var(--gradient-orange-gradient-10, linear-gradient(90deg, #E65C00 0%, #F9D423 100%));
+
+/* Shadow/200 */
+box-shadow: 0px 8px 8px -4px rgba(24, 39, 75, 0.08), 0px 4px 6px -4px rgba(24, 39, 75, 0.12);
+}
+.parent_one_list button:hover{
+ background: var(--gradient-orange-gradient-10, linear-gradient(90deg, #e25b02 0%, #e5c422 100%));
+}
+
+/* ________X__________X_______ */
+
+.parent_two{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+}
+
+.parent_two_img img{
+ display: flex;
+ align-items: center;
+ padding-top: 2rem;
+max-width: 25rem;
+flex-wrap: wrap;
+}
+.media_mobile{
+ display: none !important;
+}
+.parent_two_text{
+ padding-left: 10rem;
+}
+.parent_two_text h1{
+ color: var(--cold-grey-80, #37383C);
+font-family: Roboto;
+font-size: 52px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.parent_two_text p{
+ padding-top: 1rem;
+ color: var(--cold-grey-60, #696C73);
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 133.333% */
+display: flex;
+flex-wrap: wrap;
+}
+
+
+
+.parent_three button{
+ border: none;
+width: 150px;
+height: 40px;
+/* margin-top: 0.5rem; */
+/* padding-left: 5rem; */
+margin-left: 10rem;
+border-radius: 30px;
+background: var(--gradient-orange-gradient-10, linear-gradient(90deg, #E65C00 0%, #F9D423 100%));
+
+/* Shadow/200 */
+border-radius: 30px;
+background: var(--gradient-blue-gradient-19, linear-gradient(90deg, #00D2FF 0%, #3A7BD5 100%));
+
+/* Shadow/200 */
+box-shadow: 0px 8px 8px -4px rgba(24, 39, 75, 0.08), 0px 4px 6px -4px rgba(24, 39, 75, 0.12);
+}
+.parent_three button:hover{
+ background: var(--gradient-blue-gradient-19, linear-gradient(90deg, #03b8e0 0%, #366dbb 100%));
+
+}
+
+@media only screen and (max-width:678px) { 
+ .parent_one_logo img{
+  margin-top: 1rem;
+ }
+ 
+ 
+ 
+ .parent_one_list ul{
+  /* background-color: red; */
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+ }
+
+ .parent_two_img img{
+  /* display: inline-block; */
+  display: none;
+  
+ }
+ .media_mobile{
+  display: block !important;
+  /* background-color: red; */
+  align-self: flex-end;
+  /* max-width: 100% !important; */
+  width: 10rem;
+  margin-top: 2rem;
+  /* margin: 0px auto !important; */
+  margin-left: 2rem !important;
+  display: flex;
+  flex-direction: column !important;
+ }
+ .parent_two_text{
+  padding-left:1rem;
+ }
+ .parent_three button{
+  margin-left: 1rem;
+  margin-top: 1rem;
+ }
+
+ .parent_two_text h1{
+  color: var(--cold-grey-80, #37383C);
+ font-family: Roboto;
+ font-size: 30px;
+ margin-top: 1rem;
+ font-style: normal;
+ font-weight: 700;
+ line-height: normal;
+ }
+ .parent_two_text p{
+
+ font-size: 15px;
+
+ }
+}
